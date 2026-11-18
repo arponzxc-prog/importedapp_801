@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FFF3F0FF</color>
+    <color name="ink">#FF1E1B3A</color>
+    <color name="muted">#FF6B6785</color>
+    <color name="purple">#FF7C4DDB</color>
+    <color name="purple_card">#FFDDD6FA</color>
+    <color name="pink_card">#FFFFD9E3</color>
+    <color name="green_card">#FFCDF0E1</color>
+    <color name="dark_card">#FF272053</color>
+    <color name="ic_launcher_background">#FF7C4DDB</color>
+</resources>

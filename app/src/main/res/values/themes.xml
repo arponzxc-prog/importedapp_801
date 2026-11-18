@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SmsReader" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorOnPrimary">#FFFFFFFF</item>
+        <item name="colorSecondaryContainer">@color/purple_card</item>
+        <item name="colorOnSecondaryContainer">@color/purple</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">#FFFFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Widget.Sms.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_bg</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="checkedIconVisible">false</item>
+    </style>
+    <style name="Widget.Sms.OutlinedDanger" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">#FFC2255C</item>
+        <item name="strokeColor">#FFC2255C</item>
+    </style>
+</resources>

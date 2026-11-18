@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="24dp" android:paddingTop="8dp" android:paddingEnd="24dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnPaste" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ক্লিপবোর্ড থেকে SMS পড়ুন" app:cornerRadius="16dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="মেথড" android:textColor="@color/muted" android:textSize="13sp" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgMethod" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/rbMBkash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="bKash" />
+            <RadioButton android:id="@+id/rbMNagad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nagad" />
+            <RadioButton android:id="@+id/rbMRocket" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rocket" />
+        </RadioGroup>
+        <EditText android:id="@+id/etMTrx" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="10dp" android:background="@drawable/bg_input" android:hint="ট্রানজেকশন আইডি (TrxID)" android:inputType="textCapCharacters|textNoSuggestions" android:paddingStart="14dp" android:paddingEnd="14dp" android:singleLine="true" android:textColor="@color/ink" android:textColorHint="#FFA9A4C4" android:textSize="15sp" />
+        <EditText android:id="@+id/etMAmount" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="10dp" android:background="@drawable/bg_input" android:hint="পরিমাণ (৳)" android:inputType="numberDecimal" android:paddingStart="14dp" android:paddingEnd="14dp" android:singleLine="true" android:textColor="@color/ink" android:textColorHint="#FFA9A4C4" android:textSize="15sp" />
+        <EditText android:id="@+id/etMSender" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="10dp" android:background="@drawable/bg_input" android:hint="প্রেরকের নম্বর (ঐচ্ছিক)" android:inputType="phone" android:paddingStart="14dp" android:paddingEnd="14dp" android:singleLine="true" android:textColor="@color/ink" android:textColorHint="#FFA9A4C4" android:textSize="15sp" />
+        <TextView android:id="@+id/tvMMsg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="8dp" android:textColor="#FFC2255C" android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>
