@@ -1,22 +1,22 @@
-# SMS Reader (Android, Kotlin)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-আপনার APK-র (com.ishan.sms) মতো UI ও কাজ + নতুন ফিচার: **অ্যাপ থেকে ম্যানুয়ালি TrxID যোগ**
-(SMS পেজের নিচে ডানে "TrxID যোগ করুন" বাটন)।
+# Run and deploy your AI Studio app
 
-## বিল্ড
-1. Android Studio (Koala+) → Open → এই ফোল্ডার। Gradle sync শেষ হলে Run।
-2. APK: Build > Build Bundle(s)/APK(s) > Build APK(s)।
+This contains everything you need to run your app locally.
 
-## ব্যবহার
-1. admin.html → SMS Reader → Generate Key।
-2. অ্যাপে "প্রজেক্ট যোগ করুন" → নাম, Database URL, Key দিন → সংরক্ষণ।
-3. সেটিংসে "সব পারমিশন একসাথে দিন"।
-4. অ্যাপ bKash/Nagad/Rocket-এর "received" SMS ধরে `sms_inbox/{TrxID}`-এ আপলোড করবে।
+View your app in AI Studio: https://ai.studio/apps/523fe994-fda0-40b0-bf8d-432450c7f62e
 
-## Firebase rules
-`firebase-rules.json` শুধু `readers` ও `sms_inbox` অংশ; আপনার বাকি রুলসের সাথে মার্জ করুন
-এবং ADMIN_EMAIL_HERE বদলান।
+## Run Locally
 
-## নোট
-- Google Play SMS permission-এ কড়াকড়ি করে; এটি সরাসরি APK ইনস্টলের জন্য।
-- মূল ফাইল: SmsReceiver.kt (ধরা), SmsParser.kt (পার্স), Api.kt/Sync.kt (Firebase), MainActivity.kt (UI)।
+**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+
+
+1. Open Android Studio
+2. Select **Open** and choose the directory containing this project
+3. Allow Android Studio to fix any incompatibilities as it imports the project.
+4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
+5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
+6. Run the app on an emulator or physical device
+7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.

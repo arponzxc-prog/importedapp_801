@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="bg">#FFF3F0FF</color>
-    <color name="ink">#FF1E1B3A</color>
-    <color name="muted">#FF6B6785</color>
-    <color name="purple">#FF7C4DDB</color>
-    <color name="purple_card">#FFDDD6FA</color>
-    <color name="pink_card">#FFFFD9E3</color>
-    <color name="green_card">#FFCDF0E1</color>
-    <color name="dark_card">#FF272053</color>
-    <color name="ic_launcher_background">#FF7C4DDB</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
 </resources>
